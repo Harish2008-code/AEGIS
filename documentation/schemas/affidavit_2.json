@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Affidavit / Undertaking",
+  "version": "2.3",
+  "type": "object",
+  "properties": {
+    "institution_name": {
+      "title": "Institution name",
+      "type": "string"
+    },
+    "institution_address": {
+      "title": "Institution address",
+      "type": "string"
+    },
+    "signatory_name": {
+      "title": "Signatory name",
+      "type": "string"
+    },
+    "signatory_designation": {
+      "title": "Signatory designation",
+      "type": "string"
+    },
+    "stamp_paper_value": {
+      "title": "Stamp paper value",
+      "type": "number"
+    },
+    "stamp_paper_serial": {
+      "title": "Stamp serial number",
+      "type": "string"
+    },
+    "execution_date": {
+      "title": "Execution date",
+      "type": "string",
+      "format": "date"
+    },
+    "notary_details": {
+      "title": "Notary details",
+      "type": "string"
+    },
+    "registration_details": {
+      "title": "Registration details",
+      "type": "string"
+    },
+    "clause_content": {
+      "title": "Clause content",
+      "type": "string"
+    },
+    "template_reference": {
+      "title": "Template reference",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Self-disclosure checklist",
+  "version": "2.3",
+  "type": "object",
+  "properties": {
+    "checklist": {
+      "title": "Self disclosure items",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item_name": {
+            "title": "Item",
+            "type": "string"
+          },
+          "status": {
+            "title": "Yes / No / Partial",
+            "type": "string"
+          },
+          "supporting_reference": {
+            "title": "Supporting reference",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

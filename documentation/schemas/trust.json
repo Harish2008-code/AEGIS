@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Trust / Society registration and resolution",
+  "version": "2.3",
+  "type": "object",
+  "properties": {
+    "registration_number": {
+      "title": "Registration number",
+      "type": "string"
+    },
+    "registration_date": {
+      "title": "Registration date",
+      "type": "string",
+      "format": "date"
+    },
+    "registered_name": {
+      "title": "Registered name",
+      "type": "string"
+    },
+    "resolution_number": {
+      "title": "Resolution number",
+      "type": "string"
+    },
+    "meeting_date": {
+      "title": "Meeting date",
+      "type": "string",
+      "format": "date"
+    },
+    "signatories": {
+      "title": "Signatories",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

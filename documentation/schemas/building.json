@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Infrastructure evidence",
+  "version": "2.3",
+  "type": "object",
+  "properties": {
+    "institution_name": {
+      "title": "Institution name",
+      "type": "string"
+    },
+    "institution_address": {
+      "title": "Institution address",
+      "type": "string"
+    },
+    "declared_facilities": {
+      "title": "Declared facilities",
+      "type": "string"
+    },
+    "floor_plan_reference": {
+      "title": "Floor-plan reference",
+      "type": "string"
+    },
+    "certificate_reference": {
+      "title": "Certificate reference",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

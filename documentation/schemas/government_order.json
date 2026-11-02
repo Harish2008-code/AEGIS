@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Government approval order",
+  "version": "2.3",
+  "type": "object",
+  "properties": {
+    "order_number": {
+      "title": "Order number",
+      "type": "string"
+    },
+    "order_date": {
+      "title": "Order date",
+      "type": "string",
+      "format": "date"
+    },
+    "institution_name": {
+      "title": "Institution name",
+      "type": "string"
+    },
+    "courses": {
+      "title": "Courses / proposed intake",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "course_name": {
+            "title": "Course / branch",
+            "type": "string"
+          },
+          "level": {
+            "title": "Level",
+            "type": "string"
+          },
+          "approved_intake": {
+            "title": "Approved intake",
+            "type": "integer"
+          },
+          "requested_intake": {
+            "title": "Requested intake",
+            "type": "integer"
+          },
+          "academic_year": {
+            "title": "Academic year",
+            "type": "string"
+          },
+          "accreditation_status": {
+            "title": "Accreditation status",
+            "type": "string"
+          },
+          "valid_from": {
+            "title": "Valid from",
+            "type": "string",
+            "format": "date"
+          },
+          "valid_until": {
+            "title": "Valid until",
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "issuing_department": {
+      "title": "Issuing department",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

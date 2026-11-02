@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Appointment / Qualification",
+  "version": "2.3",
+  "type": "object",
+  "properties": {
+    "person_name": {
+      "title": "Person name",
+      "type": "string"
+    },
+    "degree": {
+      "title": "Degree / highest qualification",
+      "type": "string"
+    },
+    "university": {
+      "title": "University",
+      "type": "string"
+    },
+    "passing_year": {
+      "title": "Year of passing",
+      "type": "integer"
+    },
+    "appointment_date": {
+      "title": "Appointment date",
+      "type": "string",
+      "format": "date"
+    },
+    "designation": {
+      "title": "Designation",
+      "type": "string"
+    },
+    "letterhead_observation": {
+      "title": "Letterhead observation",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

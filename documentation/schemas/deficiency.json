@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Past deficiency record",
+  "version": "2.3",
+  "type": "object",
+  "properties": {
+    "deficiencies": {
+      "title": "Deficiency records",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "title": "Category",
+            "type": "string"
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          },
+          "deadline": {
+            "title": "Compliance deadline",
+            "type": "string",
+            "format": "date"
+          },
+          "status": {
+            "title": "Declared resolution status",
+            "type": "string"
+          },
+          "supporting_reference": {
+            "title": "Resolution reference",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

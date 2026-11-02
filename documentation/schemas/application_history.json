@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Application history",
+  "version": "2.3",
+  "type": "object",
+  "properties": {
+    "cycles": {
+      "title": "Application cycles",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "application_id": {
+            "title": "Application ID",
+            "type": "string"
+          },
+          "file_number": {
+            "title": "File number",
+            "type": "string"
+          },
+          "academic_year": {
+            "title": "Academic year",
+            "type": "string"
+          },
+          "status": {
+            "title": "Cycle status",
+            "type": "string"
+          },
+          "corrigendum_number": {
+            "title": "Corrigendum number",
+            "type": "string"
+          },
+          "corrigendum_date": {
+            "title": "Corrigendum date",
+            "type": "string",
+            "format": "date"
+          },
+          "deficiency_resolution": {
+            "title": "Deficiency resolution reference",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

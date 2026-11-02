@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NOC / Permission",
+  "version": "2.3",
+  "type": "object",
+  "properties": {
+    "noc_number": {
+      "title": "NOC / consent number",
+      "type": "string"
+    },
+    "issuing_authority": {
+      "title": "Issuing authority",
+      "type": "string"
+    },
+    "issue_date": {
+      "title": "Issue date",
+      "type": "string",
+      "format": "date"
+    },
+    "expiry_date": {
+      "title": "Expiry date",
+      "type": "string",
+      "format": "date"
+    },
+    "premises_address": {
+      "title": "Premises covered",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

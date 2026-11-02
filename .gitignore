@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+db.sqlite3
+private_documents/
+*.zip
+private_reference_review.sqlite3
+reference_review_files/
+reference_extraction_results.json
+uploads/

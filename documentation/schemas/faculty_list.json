@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Faculty list",
+  "version": "2.3",
+  "type": "object",
+  "properties": {
+    "faculty": {
+      "title": "Faculty records",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Faculty name",
+            "type": "string"
+          },
+          "designation": {
+            "title": "Designation",
+            "type": "string"
+          },
+          "department": {
+            "title": "Department",
+            "type": "string"
+          },
+          "qualification": {
+            "title": "Qualification",
+            "type": "string"
+          },
+          "specialization": {
+            "title": "Specialization",
+            "type": "string"
+          },
+          "joining_date": {
+            "title": "Joining date",
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "declared_student_count": {
+      "title": "Declared student count",
+      "type": "integer"
+    },
+    "declared_faculty_count": {
+      "title": "Declared faculty count",
+      "type": "integer"
+    },
+    "faculty_student_ratio": {
+      "title": "Faculty : student ratio (students per faculty)",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
+}

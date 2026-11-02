@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TER payment receipt",
+  "version": "2.3",
+  "type": "object",
+  "properties": {
+    "institution_name": {
+      "title": "Institution name",
+      "type": "string"
+    },
+    "institution_id": {
+      "title": "Institution permanent ID",
+      "type": "string"
+    },
+    "application_id": {
+      "title": "Application ID",
+      "type": "string"
+    },
+    "transaction_id": {
+      "title": "Transaction ID",
+      "type": "string"
+    },
+    "reference_number": {
+      "title": "Reference / certificate number",
+      "type": "string"
+    },
+    "amount_paid": {
+      "title": "Amount paid",
+      "type": "number"
+    },
+    "payment_date": {
+      "title": "Payment date",
+      "type": "string",
+      "format": "date"
+    },
+    "academic_year": {
+      "title": "Academic year",
+      "type": "string"
+    },
+    "bank_gateway_reference": {
+      "title": "Bank / gateway reference",
+      "type": "string"
+    },
+    "payments": {
+      "title": "Payment transactions",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "payment_id": {
+            "title": "Payment ID",
+            "type": "string"
+          },
+          "payment_mode": {
+            "title": "Payment mode",
+            "type": "string"
+          },
+          "transaction_id": {
+            "title": "Transaction ID",
+            "type": "string"
+          },
+          "part_payment_amount": {
+            "title": "Part payment amount",
+            "type": "number"
+          },
+          "total_amount": {
+            "title": "Declared total amount",
+            "type": "number"
+          },
+          "payment_date": {
+            "title": "Transaction date",
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "currency": {
+      "title": "Currency",
+      "type": "string"
+    },
+    "payment_status": {
+      "title": "Declared payment status",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
