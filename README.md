@@ -631,26 +631,6 @@ The v2.3 guide supersedes earlier universal seven-field descriptions. Earlier ma
 | Seeded original cannot be downloaded | Synthetic seed metadata may have no original file attached |
 | Environment changes do not apply | Export variables in the server process environment and restart; `.env` is not auto-loaded |
 
-## Team and License
-
-### Team
-
-| Member | Role | Contribution |
-|---|---|---|
-| To be filled | Team lead | To be filled |
-| To be filled | Backend / AI | To be filled |
-| To be filled | OCR / Data | To be filled |
-| To be filled | Frontend / UX | To be filled |
-| To be filled | Testing / Security | To be filled |
-| To be filled | Research / Presentation | To be filled |
-
-Adjust rows to the actual team and applicable SIH rules. Add the mentor, institutional contact and contribution details before submission.
-
-### License and Attribution
-
-A project license has **not been selected in this prototype**. The team must choose an appropriate license and add a `LICENSE` file before representing the repository as open source. Review dependency/model licenses and do not redistribute third-party certificates, logos, personal data or model weights without permission.
-
-Django, Tesseract, Ollama, pypdfium2, Pillow and other dependencies are third-party technologies, not components developed by the team. Their respective licenses and notices apply. Accreditation/authority names describe the problem domain and do not imply endorsement.
 
 ---
 
